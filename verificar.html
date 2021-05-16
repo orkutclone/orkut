@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/internal.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <script src="js/main.js" defer></script>
+    <style>
+        .central-principal{
+            padding-bottom: 2rem;
+            font-size: 1.2rem;
+            margin: 0 auto;
+            margin-bottom: 8rem;
+            width: 80%;
+        }
+        .emailVara{
+            font-weight: bold;
+            display: block;
+        }
+        .enviaCod{
+            background-color: #fff;
+            color: #236dbd;
+            font-weight: bold;
+            border: 1px solid #ccc;
+            border-radius: 7px;
+            padding: 5px;
+        }
+        #cod{
+            border: 1px solid #999;
+            padding: 2px;
+            border-radius: 10px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/orkut-logo.png" alt="logo krl ja falei">
+        </div>
+        <nav>
+            <ul class="abas">
+                <li><a href="perfil.html">Início</a></li>
+                <li><a href="recados.html">Página de recados</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="comunidades.html">Comunidades</a></li>
+            </ul>
+        </nav>
+        <p class="email"></p>
+        <div class="opcoes">
+            <a href="index.html">Sair</a>
+            <form action="busca.php" method="GET">
+                <input type="text" name="busca" id="busca" placeholder="pesquisa do orkut">
+                <input type="submit" value="🔍">
+            </form>
+        </div>
+    </header>
+    <main>
+        <section class="central-perfil">
+            <div class="central-principal">
+                <h1>Verificação de autenticidade</h1>
+                <p>
+                    Para sua segurança, precisamos checar se você é de fato você.
+                </p>
+                <p>
+                    Verifique o seu e-mail, um código foi enviado para o e-mail <span class="emailVara"></span>
+                    caso não encontre o e-mail em sua caixa de entrada, favor verificar os SPAMS, adiciona o e-mail 
+                    orkutclone@gmail.com a whitelist do seu provedor de e-mail.
+                </p>
+                <input type="text" name="cod" id="cod">
+                <button class="enviaCod">Enviar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><img src="img/orkut-logo.png" alt="logo krai kkk"></li>
+                <li><a href="#">Sobre o orkut</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Centro de segurança</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Ajuda</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="js/2steps.js"></script>
+</body>
+</html>
